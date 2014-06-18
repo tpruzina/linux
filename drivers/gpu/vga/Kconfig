@@ -1,3 +1,16 @@
+config BBSWITCH
+	bool "Nvidia Optimus switching support"
+	default n
+	depends on (PCI)
+	help
+	  bbswitch is a kernel module which automatically detects the required ACPI calls
+	  for two kinds of Optimus laptops. It has been verified to work with "real"
+	  Optimus and "legacy" Optimus laptops (at least, that is how I call them). The
+	  machines on which these tests has performed are:
+	  Clevo B7130 - GT 425M ("real" Optimus, Lekensteyns laptop)
+	  Dell Vostro 3500 - GT 310M ("legacy" Optimus, Samsagax' laptop)
+
+
 config VGA_ARB
 	bool "VGA Arbitration" if EXPERT
 	default y
