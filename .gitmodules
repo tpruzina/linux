@@ -1,0 +1,3 @@
+[submodule "kdbus"]
+	path = kdbus
+	url = https://github.com/gregkh/kdbus.git
